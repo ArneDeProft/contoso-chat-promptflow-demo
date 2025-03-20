@@ -1,0 +1,732 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "fluency_evaluation",
+        "__time": {
+            "start": "2025-02-18T14:12:44.051237",
+            "end": "2025-02-18T14:12:44.252584",
+            "duration": 201
+        },
+        "signature": "evaluators.custom_evals.fluency.fluency_evaluation",
+        "inputs": {
+            "question": "what is the temperature rating of my sleeping bag?",
+            "context": [
+                {
+                    "id": "7",
+                    "title": "CozyNights Sleeping Bag",
+                    "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                    "url": "/products/cozynights-sleeping-bag"
+                },
+                {
+                    "id": "14",
+                    "title": "MountainDream Sleeping Bag",
+                    "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                    "url": "/products/mountaindream-sleeping-bag"
+                }
+            ],
+            "answer": "Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728"
+        },
+        "__frames": [
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2025-02-18T14:12:44.051420",
+                    "end": "2025-02-18T14:12:44.252550",
+                    "duration": 201
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "fluency.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                        "api_version": "2024-08-01-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "question": "what is the temperature rating of my sleeping bag?",
+                        "context": [
+                            {
+                                "id": "7",
+                                "title": "CozyNights Sleeping Bag",
+                                "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                                "url": "/products/cozynights-sleeping-bag"
+                            },
+                            {
+                                "id": "14",
+                                "title": "MountainDream Sleeping Bag",
+                                "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                                "url": "/products/mountaindream-sleeping-bag"
+                            }
+                        ],
+                        "answer": "Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2025-02-18T14:12:44.051858",
+                            "end": "2025-02-18T14:12:44.054697",
+                            "duration": 2
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "QnA Fluency Evaluation",
+                            "description": "Evaluates fluency score for QA scenario",
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                    "azure_deployment": "gpt-4o-mini",
+                                    "api_version": "2024-08-01-preview",
+                                    "api_key": "********************************"
+                                },
+                                "parameters": {
+                                    "max_tokens": 3000,
+                                    "temperature": 0.2
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                            },
+                            "inputs": {
+                                "question": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "context": {
+                                    "type": "object",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                }
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                            "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2025-02-18T14:12:44.054752",
+                            "end": "2025-02-18T14:12:44.056305",
+                            "duration": 1
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Fluency Evaluation",
+                                "description": "Evaluates fluency score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "api_key": "********************************"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 3000,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "inputs": {
+                                "question": "what is the temperature rating of my sleeping bag?",
+                                "context": [
+                                    {
+                                        "id": "7",
+                                        "title": "CozyNights Sleeping Bag",
+                                        "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                                        "url": "/products/cozynights-sleeping-bag"
+                                    },
+                                    {
+                                        "id": "14",
+                                        "title": "MountainDream Sleeping Bag",
+                                        "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                                        "url": "/products/mountaindream-sleeping-bag"
+                                    }
+                                ],
+                                "answer": "Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2025-02-18T14:12:44.055101",
+                                    "end": "2025-02-18T14:12:44.055989",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "question": "what is the temperature rating of my sleeping bag?",
+                                        "context": [
+                                            {
+                                                "id": "7",
+                                                "title": "CozyNights Sleeping Bag",
+                                                "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                                                "url": "/products/cozynights-sleeping-bag"
+                                            },
+                                            {
+                                                "id": "14",
+                                                "title": "MountainDream Sleeping Bag",
+                                                "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                                                "url": "/products/mountaindream-sleeping-bag"
+                                            }
+                                        ],
+                                        "answer": "Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728"
+                                    }
+                                },
+                                "result": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: what is the temperature rating of my sleeping bag?\nanswer: Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728\nstars:"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2025-02-18T14:12:44.056043",
+                                    "end": "2025-02-18T14:12:44.056241",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: what is the temperature rating of my sleeping bag?\nanswer: Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728\nstars:"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: what is the temperature rating of my sleeping bag?\nanswer: Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728\nstars:"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                            },
+                            {
+                                "role": "user",
+                                "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: what is the temperature rating of my sleeping bag?\nanswer: Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728\nstars:"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2025-02-18T14:12:44.056334",
+                            "end": "2025-02-18T14:12:44.252510",
+                            "duration": 196
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Fluency Evaluation",
+                                "description": "Evaluates fluency score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "api_key": "********************************"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 3000,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: what is the temperature rating of my sleeping bag?\nanswer: Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728\nstars:"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                "api_version": "2024-08-01-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2025-02-18T14:12:44.056918",
+                                    "end": "2025-02-18T14:12:44.252099",
+                                    "duration": 195
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: what is the temperature rating of my sleeping bag?\nanswer: Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728\nstars:"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2025-02-18T14:12:44.057018",
+                                            "end": "2025-02-18T14:12:44.062601",
+                                            "duration": 5
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                            "api_version": "2024-08-01-preview",
+                                            "azure_deployment": "gpt-4o-mini",
+                                            "api_key": "********************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x702ae9eae510>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2025-02-18T14:12:44.062652",
+                                            "end": "2025-02-18T14:12:44.251794",
+                                            "duration": 189
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4o-mini",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: what is the temperature rating of my sleeping bag?\nanswer: Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728\nstars:"
+                                                }
+                                            ],
+                                            "max_tokens": 3000,
+                                            "temperature": 0.2
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-B2Id26dajqJJGasP89eaUmJt2OdPp",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "5",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "audio": null,
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    },
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "protected_material_code": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "protected_material_text": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1739887964,
+                                            "model": "gpt-4o-mini-2024-07-18",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_b045b4af17",
+                                            "usage": {
+                                                "completion_tokens": 1,
+                                                "prompt_tokens": 584,
+                                                "total_tokens": 585,
+                                                "completion_tokens_details": {
+                                                    "accepted_prediction_tokens": 0,
+                                                    "audio_tokens": 0,
+                                                    "reasoning_tokens": 0,
+                                                    "rejected_prediction_tokens": 0
+                                                },
+                                                "prompt_tokens_details": {
+                                                    "audio_tokens": 0,
+                                                    "cached_tokens": 0
+                                                }
+                                            },
+                                            "prompt_filter_results": [
+                                                {
+                                                    "prompt_index": 0,
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "jailbreak": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 584,
+                                            "total_tokens": 585
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-B2Id26dajqJJGasP89eaUmJt2OdPp",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "5",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "audio": "None",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            },
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "protected_material_code": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "protected_material_text": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "created": 1739887964,
+                                    "model": "gpt-4o-mini-2024-07-18",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_b045b4af17",
+                                    "usage": {
+                                        "completion_tokens": 1,
+                                        "prompt_tokens": 584,
+                                        "total_tokens": 585,
+                                        "completion_tokens_details": {
+                                            "accepted_prediction_tokens": 0,
+                                            "audio_tokens": 0,
+                                            "reasoning_tokens": 0,
+                                            "rejected_prediction_tokens": 0
+                                        },
+                                        "prompt_tokens_details": {
+                                            "audio_tokens": 0,
+                                            "cached_tokens": 0
+                                        }
+                                    },
+                                    "prompt_filter_results": [
+                                        {
+                                            "prompt_index": 0,
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "jailbreak": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "__usage": {
+                                    "completion_tokens": 2,
+                                    "prompt_tokens": 1168,
+                                    "total_tokens": 1170
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2025-02-18T14:12:44.252157",
+                                    "end": "2025-02-18T14:12:44.252476",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-B2Id26dajqJJGasP89eaUmJt2OdPp",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "5",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "audio": "None",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                },
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "protected_material_code": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "protected_material_text": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "created": 1739887964,
+                                        "model": "gpt-4o-mini-2024-07-18",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_b045b4af17",
+                                        "usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 584,
+                                            "total_tokens": 585,
+                                            "completion_tokens_details": {
+                                                "accepted_prediction_tokens": 0,
+                                                "audio_tokens": 0,
+                                                "reasoning_tokens": 0,
+                                                "rejected_prediction_tokens": 0
+                                            },
+                                            "prompt_tokens_details": {
+                                                "audio_tokens": 0,
+                                                "cached_tokens": 0
+                                            }
+                                        },
+                                        "prompt_filter_results": [
+                                            {
+                                                "prompt_index": 0,
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "jailbreak": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "result": "5"
+                            }
+                        ],
+                        "result": "5",
+                        "__usage": {
+                            "completion_tokens": 2,
+                            "prompt_tokens": 1168,
+                            "total_tokens": 1170
+                        }
+                    }
+                ],
+                "result": "5",
+                "__usage": {
+                    "completion_tokens": 2,
+                    "prompt_tokens": 1168,
+                    "total_tokens": 1170
+                }
+            }
+        ],
+        "result": "5",
+        "__usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1168,
+            "total_tokens": 1170
+        }
+    }
+}

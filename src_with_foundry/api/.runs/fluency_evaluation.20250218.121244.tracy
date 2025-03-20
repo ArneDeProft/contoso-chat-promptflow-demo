@@ -1,0 +1,732 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "fluency_evaluation",
+        "__time": {
+            "start": "2025-02-18T12:12:38.197272",
+            "end": "2025-02-18T12:12:44.473873",
+            "duration": 6276
+        },
+        "signature": "evaluators.custom_evals.fluency.fluency_evaluation",
+        "inputs": {
+            "question": "tell me about your hiking jackets",
+            "context": [
+                {
+                    "id": "17",
+                    "title": "RainGuard Hiking Jacket",
+                    "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                    "url": "/products/rainguard-hiking-jacket"
+                },
+                {
+                    "id": "3",
+                    "title": "Summit Breeze Jacket",
+                    "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                    "url": "/products/summit-breeze-jacket"
+                }
+            ],
+            "answer": "Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof"
+        },
+        "__frames": [
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2025-02-18T12:12:38.197436",
+                    "end": "2025-02-18T12:12:44.473839",
+                    "duration": 6276
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "fluency.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                        "api_version": "2024-08-01-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "question": "tell me about your hiking jackets",
+                        "context": [
+                            {
+                                "id": "17",
+                                "title": "RainGuard Hiking Jacket",
+                                "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                "url": "/products/rainguard-hiking-jacket"
+                            },
+                            {
+                                "id": "3",
+                                "title": "Summit Breeze Jacket",
+                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                "url": "/products/summit-breeze-jacket"
+                            }
+                        ],
+                        "answer": "Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2025-02-18T12:12:38.197909",
+                            "end": "2025-02-18T12:12:38.200502",
+                            "duration": 2
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "QnA Fluency Evaluation",
+                            "description": "Evaluates fluency score for QA scenario",
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                    "azure_deployment": "gpt-4o-mini",
+                                    "api_version": "2024-08-01-preview",
+                                    "api_key": "********************************"
+                                },
+                                "parameters": {
+                                    "max_tokens": 3000,
+                                    "temperature": 0.2
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                            },
+                            "inputs": {
+                                "question": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "context": {
+                                    "type": "object",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                }
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                            "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2025-02-18T12:12:38.200550",
+                            "end": "2025-02-18T12:12:38.202001",
+                            "duration": 1
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Fluency Evaluation",
+                                "description": "Evaluates fluency score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "api_key": "********************************"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 3000,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "inputs": {
+                                "question": "tell me about your hiking jackets",
+                                "context": [
+                                    {
+                                        "id": "17",
+                                        "title": "RainGuard Hiking Jacket",
+                                        "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                        "url": "/products/rainguard-hiking-jacket"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "title": "Summit Breeze Jacket",
+                                        "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                        "url": "/products/summit-breeze-jacket"
+                                    }
+                                ],
+                                "answer": "Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2025-02-18T12:12:38.200863",
+                                    "end": "2025-02-18T12:12:38.201697",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "question": "tell me about your hiking jackets",
+                                        "context": [
+                                            {
+                                                "id": "17",
+                                                "title": "RainGuard Hiking Jacket",
+                                                "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                                "url": "/products/rainguard-hiking-jacket"
+                                            },
+                                            {
+                                                "id": "3",
+                                                "title": "Summit Breeze Jacket",
+                                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                                "url": "/products/summit-breeze-jacket"
+                                            }
+                                        ],
+                                        "answer": "Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof"
+                                    }
+                                },
+                                "result": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: tell me about your hiking jackets\nanswer: Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof\nstars:"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2025-02-18T12:12:38.201748",
+                                    "end": "2025-02-18T12:12:38.201939",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: tell me about your hiking jackets\nanswer: Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof\nstars:"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: tell me about your hiking jackets\nanswer: Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof\nstars:"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                            },
+                            {
+                                "role": "user",
+                                "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: tell me about your hiking jackets\nanswer: Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof\nstars:"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2025-02-18T12:12:38.202029",
+                            "end": "2025-02-18T12:12:44.473798",
+                            "duration": 6271
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Fluency Evaluation",
+                                "description": "Evaluates fluency score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "api_key": "********************************"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 3000,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/fluency.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nFluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: tell me about your hiking jackets\nanswer: Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof\nstars:"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                "api_version": "2024-08-01-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2025-02-18T12:12:38.202376",
+                                    "end": "2025-02-18T12:12:44.473359",
+                                    "duration": 6270
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: tell me about your hiking jackets\nanswer: Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof\nstars:"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2025-02-18T12:12:38.202470",
+                                            "end": "2025-02-18T12:12:38.207825",
+                                            "duration": 5
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                            "api_version": "2024-08-01-preview",
+                                            "azure_deployment": "gpt-4o-mini",
+                                            "api_key": "********************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x7ef5e45efc10>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2025-02-18T12:12:38.207866",
+                                            "end": "2025-02-18T12:12:44.472843",
+                                            "duration": 6264
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4o-mini",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "Fluency measures the quality of individual sentences in the answer, and whether they are well-written and grammatically correct. Consider the quality of individual sentences when evaluating fluency. Given the question and answer, score the fluency of the answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks fluency\nTwo stars: the answer mostly lacks fluency\nThree stars: the answer is partially fluent\nFour stars: the answer is mostly fluent\nFive stars: the answer has perfect fluency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What did you have for breakfast today?\nanswer: Breakfast today, me eating cereal and orange juice very good.\nstars: 1\n\nquestion: How do you feel when you travel alone?\nanswer: Alone travel, nervous, but excited also. I feel adventure and like its time.\nstars: 2\n\nquestion: When was the last time you went on a family vacation?\nanswer: Last family vacation, it took place in last summer. We traveled to a beach destination, very fun.\nstars: 3\n\nquestion: What is your favorite thing about your job?\nanswer: My favorite aspect of my job is the chance to interact with diverse people. I am constantly learning from their experiences and stories.\nstars: 4\n\nquestion: Can you describe your morning routine?\nanswer: Every morning, I wake up at 6 am, drink a glass of water, and do some light stretching. After that, I take a shower and get dressed for work. Then, I have a healthy breakfast, usually consisting of oatmeal and fruits, before leaving the house around 7:30 am.\nstars: 5\n\nquestion: tell me about your hiking jackets\nanswer: Hey there! \ud83c\udf1f \n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is perfect for weatherproof comfort! It's made with waterproof, breathable fabric, has an adjustable hood, and features ventilation zippers to keep you cool during intense activities. Plus, it has multiple pockets for storage and reflective details for low-light visibility. Ideal for hiking, camping, and trekking! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and stylish option, this jacket is windproof\nstars:"
+                                                }
+                                            ],
+                                            "max_tokens": 3000,
+                                            "temperature": 0.2
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-B2GkuVZtx2cQ55DOz6XG7XnbXbjpR",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "4",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "audio": null,
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    },
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "protected_material_code": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "protected_material_text": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1739880764,
+                                            "model": "gpt-4o-mini-2024-07-18",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_b045b4af17",
+                                            "usage": {
+                                                "completion_tokens": 1,
+                                                "prompt_tokens": 595,
+                                                "total_tokens": 596,
+                                                "completion_tokens_details": {
+                                                    "accepted_prediction_tokens": 0,
+                                                    "audio_tokens": 0,
+                                                    "reasoning_tokens": 0,
+                                                    "rejected_prediction_tokens": 0
+                                                },
+                                                "prompt_tokens_details": {
+                                                    "audio_tokens": 0,
+                                                    "cached_tokens": 0
+                                                }
+                                            },
+                                            "prompt_filter_results": [
+                                                {
+                                                    "prompt_index": 0,
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "jailbreak": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 595,
+                                            "total_tokens": 596
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-B2GkuVZtx2cQ55DOz6XG7XnbXbjpR",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "4",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "audio": "None",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            },
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "protected_material_code": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "protected_material_text": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "created": 1739880764,
+                                    "model": "gpt-4o-mini-2024-07-18",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_b045b4af17",
+                                    "usage": {
+                                        "completion_tokens": 1,
+                                        "prompt_tokens": 595,
+                                        "total_tokens": 596,
+                                        "completion_tokens_details": {
+                                            "accepted_prediction_tokens": 0,
+                                            "audio_tokens": 0,
+                                            "reasoning_tokens": 0,
+                                            "rejected_prediction_tokens": 0
+                                        },
+                                        "prompt_tokens_details": {
+                                            "audio_tokens": 0,
+                                            "cached_tokens": 0
+                                        }
+                                    },
+                                    "prompt_filter_results": [
+                                        {
+                                            "prompt_index": 0,
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "jailbreak": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "__usage": {
+                                    "completion_tokens": 2,
+                                    "prompt_tokens": 1190,
+                                    "total_tokens": 1192
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2025-02-18T12:12:44.473420",
+                                    "end": "2025-02-18T12:12:44.473761",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-B2GkuVZtx2cQ55DOz6XG7XnbXbjpR",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "4",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "audio": "None",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                },
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "protected_material_code": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "protected_material_text": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "created": 1739880764,
+                                        "model": "gpt-4o-mini-2024-07-18",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_b045b4af17",
+                                        "usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 595,
+                                            "total_tokens": 596,
+                                            "completion_tokens_details": {
+                                                "accepted_prediction_tokens": 0,
+                                                "audio_tokens": 0,
+                                                "reasoning_tokens": 0,
+                                                "rejected_prediction_tokens": 0
+                                            },
+                                            "prompt_tokens_details": {
+                                                "audio_tokens": 0,
+                                                "cached_tokens": 0
+                                            }
+                                        },
+                                        "prompt_filter_results": [
+                                            {
+                                                "prompt_index": 0,
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "jailbreak": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "result": "4"
+                            }
+                        ],
+                        "result": "4",
+                        "__usage": {
+                            "completion_tokens": 2,
+                            "prompt_tokens": 1190,
+                            "total_tokens": 1192
+                        }
+                    }
+                ],
+                "result": "4",
+                "__usage": {
+                    "completion_tokens": 2,
+                    "prompt_tokens": 1190,
+                    "total_tokens": 1192
+                }
+            }
+        ],
+        "result": "4",
+        "__usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1190,
+            "total_tokens": 1192
+        }
+    }
+}

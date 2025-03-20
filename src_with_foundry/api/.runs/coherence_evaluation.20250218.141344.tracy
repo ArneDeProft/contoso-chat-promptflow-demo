@@ -1,0 +1,732 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "coherence_evaluation",
+        "__time": {
+            "start": "2025-02-18T14:13:44.650755",
+            "end": "2025-02-18T14:13:44.857315",
+            "duration": 206
+        },
+        "signature": "evaluators.custom_evals.coherence.coherence_evaluation",
+        "inputs": {
+            "question": "what is the temperature rating of the cozynights sleeping bag?",
+            "context": [
+                {
+                    "id": "7",
+                    "title": "CozyNights Sleeping Bag",
+                    "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                    "url": "/products/cozynights-sleeping-bag"
+                },
+                {
+                    "id": "14",
+                    "title": "MountainDream Sleeping Bag",
+                    "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                    "url": "/products/mountaindream-sleeping-bag"
+                }
+            ],
+            "answer": "Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f"
+        },
+        "__frames": [
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2025-02-18T14:13:44.650919",
+                    "end": "2025-02-18T14:13:44.857262",
+                    "duration": 206
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "coherence.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                        "api_version": "2024-08-01-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "question": "what is the temperature rating of the cozynights sleeping bag?",
+                        "context": [
+                            {
+                                "id": "7",
+                                "title": "CozyNights Sleeping Bag",
+                                "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                                "url": "/products/cozynights-sleeping-bag"
+                            },
+                            {
+                                "id": "14",
+                                "title": "MountainDream Sleeping Bag",
+                                "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                                "url": "/products/mountaindream-sleeping-bag"
+                            }
+                        ],
+                        "answer": "Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2025-02-18T14:13:44.651381",
+                            "end": "2025-02-18T14:13:44.654022",
+                            "duration": 2
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "QnA Coherence Evaluation",
+                            "description": "Evaluates coherence score for QA scenario",
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                    "azure_deployment": "gpt-4o-mini",
+                                    "api_version": "2024-08-01-preview",
+                                    "api_key": "********************************"
+                                },
+                                "parameters": {
+                                    "max_tokens": 3000,
+                                    "temperature": 0.2
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                            },
+                            "inputs": {
+                                "question": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "context": {
+                                    "type": "object",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                }
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                            "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2025-02-18T14:13:44.654071",
+                            "end": "2025-02-18T14:13:44.655565",
+                            "duration": 1
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Coherence Evaluation",
+                                "description": "Evaluates coherence score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "api_key": "********************************"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 3000,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "inputs": {
+                                "question": "what is the temperature rating of the cozynights sleeping bag?",
+                                "context": [
+                                    {
+                                        "id": "7",
+                                        "title": "CozyNights Sleeping Bag",
+                                        "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                                        "url": "/products/cozynights-sleeping-bag"
+                                    },
+                                    {
+                                        "id": "14",
+                                        "title": "MountainDream Sleeping Bag",
+                                        "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                                        "url": "/products/mountaindream-sleeping-bag"
+                                    }
+                                ],
+                                "answer": "Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2025-02-18T14:13:44.654393",
+                                    "end": "2025-02-18T14:13:44.655270",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "question": "what is the temperature rating of the cozynights sleeping bag?",
+                                        "context": [
+                                            {
+                                                "id": "7",
+                                                "title": "CozyNights Sleeping Bag",
+                                                "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                                                "url": "/products/cozynights-sleeping-bag"
+                                            },
+                                            {
+                                                "id": "14",
+                                                "title": "MountainDream Sleeping Bag",
+                                                "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                                                "url": "/products/mountaindream-sleeping-bag"
+                                            }
+                                        ],
+                                        "answer": "Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f"
+                                    }
+                                },
+                                "result": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the temperature rating of the cozynights sleeping bag?\nanswer: Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f\nstars:"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2025-02-18T14:13:44.655319",
+                                    "end": "2025-02-18T14:13:44.655502",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the temperature rating of the cozynights sleeping bag?\nanswer: Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f\nstars:"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the temperature rating of the cozynights sleeping bag?\nanswer: Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f\nstars:"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                            },
+                            {
+                                "role": "user",
+                                "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the temperature rating of the cozynights sleeping bag?\nanswer: Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f\nstars:"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2025-02-18T14:13:44.655594",
+                            "end": "2025-02-18T14:13:44.857200",
+                            "duration": 201
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Coherence Evaluation",
+                                "description": "Evaluates coherence score for QA scenario",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "api_key": "********************************"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 3000,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/coherence.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\n\nuser:\nCoherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: {{question}}\nanswer: {{answer}}\nstars:"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the temperature rating of the cozynights sleeping bag?\nanswer: Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f\nstars:"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                "api_version": "2024-08-01-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2025-02-18T14:13:44.655926",
+                                    "end": "2025-02-18T14:13:44.856494",
+                                    "duration": 200
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the temperature rating of the cozynights sleeping bag?\nanswer: Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f\nstars:"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2025-02-18T14:13:44.656019",
+                                            "end": "2025-02-18T14:13:44.661468",
+                                            "duration": 5
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                            "api_version": "2024-08-01-preview",
+                                            "azure_deployment": "gpt-4o-mini",
+                                            "api_key": "********************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x702ae9ef78d0>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2025-02-18T14:13:44.661511",
+                                            "end": "2025-02-18T14:13:44.856003",
+                                            "duration": 194
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4o-mini",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "Coherence of an answer is measured by how well all the sentences fit together and sound naturally as a whole. Consider the overall quality of the answer when evaluating coherence. Given the question and answer, score the coherence of answer between one to five stars using the following rating scale:\nOne star: the answer completely lacks coherence\nTwo stars: the answer mostly lacks coherence\nThree stars: the answer is partially coherent\nFour stars: the answer is mostly coherent\nFive stars: the answer has perfect coherency\n\nThis rating value should always be an integer between 1 and 5. So the rating produced should be 1 or 2 or 3 or 4 or 5.\n\nquestion: What is your favorite indoor activity and why do you enjoy it?\nanswer: I like pizza. The sun is shining.\nstars: 1\n\nquestion: Can you describe your favorite movie without giving away any spoilers?\nanswer: It is a science fiction movie. There are dinosaurs. The actors eat cake. People must stop the villain.\nstars: 2\n\nquestion: What are some benefits of regular exercise?\nanswer: Regular exercise improves your mood. A good workout also helps you sleep better. Trees are green.\nstars: 3\n\nquestion: How do you cope with stress in your daily life?\nanswer: I usually go for a walk to clear my head. Listening to music helps me relax as well. Stress is a part of life, but we can manage it through some activities.\nstars: 4\n\nquestion: What can you tell me about climate change and its effects on the environment?\nanswer: Climate change has far-reaching effects on the environment. Rising temperatures result in the melting of polar ice caps, contributing to sea-level rise. Additionally, more frequent and severe weather events, such as hurricanes and heatwaves, can cause disruption to ecosystems and human societies alike.\nstars: 5\n\nquestion: what is the temperature rating of the cozynights sleeping bag?\nanswer: Hey Jason! \ud83d\ude0a The CozyNights Sleeping Bag is designed for three-season use, but the specific temperature rating isn't mentioned in the details. However, it\u2019s crafted to provide comfort and warmth during spring, summer, and fall adventures! \n\nIf you're looking for a great companion for colder nights, you might want to check out the **MountainDream Sleeping Bag**, which can handle temperatures down to 15\u00b0F! \ud83c\udfd5\ufe0f\n\nHappy camping! \ud83c\udf1f\nstars:"
+                                                }
+                                            ],
+                                            "max_tokens": 3000,
+                                            "temperature": 0.2
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-B2Ie04LdgKaytvBLzn8tjeDxq598P",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "4",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "audio": null,
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    },
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "protected_material_code": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "protected_material_text": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1739888024,
+                                            "model": "gpt-4o-mini-2024-07-18",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_b045b4af17",
+                                            "usage": {
+                                                "completion_tokens": 1,
+                                                "prompt_tokens": 575,
+                                                "total_tokens": 576,
+                                                "completion_tokens_details": {
+                                                    "accepted_prediction_tokens": 0,
+                                                    "audio_tokens": 0,
+                                                    "reasoning_tokens": 0,
+                                                    "rejected_prediction_tokens": 0
+                                                },
+                                                "prompt_tokens_details": {
+                                                    "audio_tokens": 0,
+                                                    "cached_tokens": 0
+                                                }
+                                            },
+                                            "prompt_filter_results": [
+                                                {
+                                                    "prompt_index": 0,
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "jailbreak": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 575,
+                                            "total_tokens": 576
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-B2Ie04LdgKaytvBLzn8tjeDxq598P",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "4",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "audio": "None",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            },
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "protected_material_code": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "protected_material_text": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "created": 1739888024,
+                                    "model": "gpt-4o-mini-2024-07-18",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_b045b4af17",
+                                    "usage": {
+                                        "completion_tokens": 1,
+                                        "prompt_tokens": 575,
+                                        "total_tokens": 576,
+                                        "completion_tokens_details": {
+                                            "accepted_prediction_tokens": 0,
+                                            "audio_tokens": 0,
+                                            "reasoning_tokens": 0,
+                                            "rejected_prediction_tokens": 0
+                                        },
+                                        "prompt_tokens_details": {
+                                            "audio_tokens": 0,
+                                            "cached_tokens": 0
+                                        }
+                                    },
+                                    "prompt_filter_results": [
+                                        {
+                                            "prompt_index": 0,
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "jailbreak": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "__usage": {
+                                    "completion_tokens": 2,
+                                    "prompt_tokens": 1150,
+                                    "total_tokens": 1152
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2025-02-18T14:13:44.856577",
+                                    "end": "2025-02-18T14:13:44.857140",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-B2Ie04LdgKaytvBLzn8tjeDxq598P",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "4",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "audio": "None",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                },
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "protected_material_code": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "protected_material_text": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "created": 1739888024,
+                                        "model": "gpt-4o-mini-2024-07-18",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_b045b4af17",
+                                        "usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 575,
+                                            "total_tokens": 576,
+                                            "completion_tokens_details": {
+                                                "accepted_prediction_tokens": 0,
+                                                "audio_tokens": 0,
+                                                "reasoning_tokens": 0,
+                                                "rejected_prediction_tokens": 0
+                                            },
+                                            "prompt_tokens_details": {
+                                                "audio_tokens": 0,
+                                                "cached_tokens": 0
+                                            }
+                                        },
+                                        "prompt_filter_results": [
+                                            {
+                                                "prompt_index": 0,
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "jailbreak": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "result": "4"
+                            }
+                        ],
+                        "result": "4",
+                        "__usage": {
+                            "completion_tokens": 2,
+                            "prompt_tokens": 1150,
+                            "total_tokens": 1152
+                        }
+                    }
+                ],
+                "result": "4",
+                "__usage": {
+                    "completion_tokens": 2,
+                    "prompt_tokens": 1150,
+                    "total_tokens": 1152
+                }
+            }
+        ],
+        "result": "4",
+        "__usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 1150,
+            "total_tokens": 1152
+        }
+    }
+}

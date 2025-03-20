@@ -1,0 +1,732 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "groundedness_evaluation",
+        "__time": {
+            "start": "2025-02-18T14:07:32.892476",
+            "end": "2025-02-18T14:07:40.556633",
+            "duration": 7664
+        },
+        "signature": "evaluators.custom_evals.groundedness.groundedness_evaluation",
+        "inputs": {
+            "question": "tell me about your hiking jackets",
+            "context": [
+                {
+                    "id": "17",
+                    "title": "RainGuard Hiking Jacket",
+                    "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                    "url": "/products/rainguard-hiking-jacket"
+                },
+                {
+                    "id": "3",
+                    "title": "Summit Breeze Jacket",
+                    "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                    "url": "/products/summit-breeze-jacket"
+                }
+            ],
+            "answer": "Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and"
+        },
+        "__frames": [
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2025-02-18T14:07:32.892665",
+                    "end": "2025-02-18T14:07:40.556602",
+                    "duration": 7663
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "groundedness.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                        "api_version": "2024-08-01-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "question": "tell me about your hiking jackets",
+                        "context": [
+                            {
+                                "id": "17",
+                                "title": "RainGuard Hiking Jacket",
+                                "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                "url": "/products/rainguard-hiking-jacket"
+                            },
+                            {
+                                "id": "3",
+                                "title": "Summit Breeze Jacket",
+                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                "url": "/products/summit-breeze-jacket"
+                            }
+                        ],
+                        "answer": "Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2025-02-18T14:07:32.893180",
+                            "end": "2025-02-18T14:07:32.897970",
+                            "duration": 4
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/groundedness.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "QnA Groundedness Evaluation",
+                            "description": "Compute the groundedness of the answer for the given question based on the context.",
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                    "azure_deployment": "gpt-4o-mini",
+                                    "api_version": "2024-08-01-preview",
+                                    "api_key": "********************************"
+                                },
+                                "parameters": {
+                                    "max_tokens": 3000,
+                                    "temperature": 0.2
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                            },
+                            "inputs": {
+                                "question": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "context": {
+                                    "type": "object",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                }
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/groundedness.prompty",
+                            "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": {{context}}, \"QUESTION\": \"\", \"ANSWER\": {{answer}}}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2025-02-18T14:07:32.898030",
+                            "end": "2025-02-18T14:07:32.899714",
+                            "duration": 1
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Groundedness Evaluation",
+                                "description": "Compute the groundedness of the answer for the given question based on the context.",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "api_key": "********************************"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 3000,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/groundedness.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": {{context}}, \"QUESTION\": \"\", \"ANSWER\": {{answer}}}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                            },
+                            "inputs": {
+                                "question": "tell me about your hiking jackets",
+                                "context": [
+                                    {
+                                        "id": "17",
+                                        "title": "RainGuard Hiking Jacket",
+                                        "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                        "url": "/products/rainguard-hiking-jacket"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "title": "Summit Breeze Jacket",
+                                        "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                        "url": "/products/summit-breeze-jacket"
+                                    }
+                                ],
+                                "answer": "Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2025-02-18T14:07:32.898363",
+                                    "end": "2025-02-18T14:07:32.899321",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "question": "tell me about your hiking jackets",
+                                        "context": [
+                                            {
+                                                "id": "17",
+                                                "title": "RainGuard Hiking Jacket",
+                                                "content": "Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!",
+                                                "url": "/products/rainguard-hiking-jacket"
+                                            },
+                                            {
+                                                "id": "3",
+                                                "title": "Summit Breeze Jacket",
+                                                "content": "Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.",
+                                                "url": "/products/summit-breeze-jacket"
+                                            }
+                                        ],
+                                        "answer": "Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and"
+                                    }
+                                },
+                                "result": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}], \"QUESTION\": \"\", \"ANSWER\": Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2025-02-18T14:07:32.899379",
+                                    "end": "2025-02-18T14:07:32.899639",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}], \"QUESTION\": \"\", \"ANSWER\": Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}], \"QUESTION\": \"\", \"ANSWER\": Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                            },
+                            {
+                                "role": "user",
+                                "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}], \"QUESTION\": \"\", \"ANSWER\": Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2025-02-18T14:07:32.899743",
+                            "end": "2025-02-18T14:07:40.556562",
+                            "duration": 7656
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Groundedness Evaluation",
+                                "description": "Compute the groundedness of the answer for the given question based on the context.",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "api_key": "********************************"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 3000,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/groundedness.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": {{context}}, \"QUESTION\": \"\", \"ANSWER\": {{answer}}}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}], \"QUESTION\": \"\", \"ANSWER\": Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                "api_version": "2024-08-01-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2025-02-18T14:07:32.900101",
+                                    "end": "2025-02-18T14:07:40.556171",
+                                    "duration": 7656
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}], \"QUESTION\": \"\", \"ANSWER\": Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2025-02-18T14:07:32.900297",
+                                            "end": "2025-02-18T14:07:32.911622",
+                                            "duration": 11
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                            "api_version": "2024-08-01-preview",
+                                            "azure_deployment": "gpt-4o-mini",
+                                            "api_key": "********************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x702aea0437d0>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2025-02-18T14:07:32.911694",
+                                            "end": "2025-02-18T14:07:40.555881",
+                                            "duration": 7644
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4o-mini",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '17', 'title': 'RainGuard Hiking Jacket', 'content': \"Introducing the MountainStyle RainGuard Hiking Jacket - the ultimate solution for weatherproof comfort during your outdoor undertakings! Designed with waterproof, breathable fabric, this jacket promises an outdoor experience that's as dry as it is comfortable. The rugged construction assures durability, while the adjustable hood provides a customizable fit against wind and rain. Featuring multiple pockets for safe, convenient storage and adjustable cuffs and hem, you can tailor the jacket to suit your needs on-the-go. And, don't worry about overheating during intense activities - it's equipped with ventilation zippers for increased airflow. Reflective details ensure visibility even during low-light conditions, making it perfect for evening treks. With its lightweight, packable design, carrying it inside your backpack requires minimal effort. With options for men and women, the RainGuard Hiking Jacket is perfect for hiking, camping, trekking and countless other outdoor adventures. Don't let the weather stand in your way - embrace the outdoors with MountainStyle RainGuard Hiking Jacket!\", 'url': '/products/rainguard-hiking-jacket'}, {'id': '3', 'title': 'Summit Breeze Jacket', 'content': \"Discover the joy of hiking with MountainStyle's Summit Breeze Jacket. This lightweight jacket is your perfect companion for outdoor adventures. Sporting a trail-ready, windproof design and a water-resistant fabric, it's ready to withstand any weather. The breathable polyester material and adjustable cuffs keep you comfortable, whether you're ascending a mountain or strolling through a park. And its sleek black color adds style to function. The jacket features a full-zip front closure, adjustable hood, and secure zippered pockets. Experience the comfort of its inner lining and the convenience of its packable design. Crafted for night trekkers too, the jacket has reflective accents for enhanced visibility. Rugged yet chic, the Summit Breeze Jacket is more than a hiking essential, it's the gear that inspires you to reach new heights. Choose adventure, choose the Summit Breeze Jacket.\", 'url': '/products/summit-breeze-jacket'}], \"QUESTION\": \"\", \"ANSWER\": Hi Sarah! \ud83c\udf1f\n\nWe have two fantastic hiking jackets that you might love:\n\n1. **MountainStyle RainGuard Hiking Jacket** (Product ID: 17)  \n   This jacket is designed for weatherproof comfort with waterproof, breathable fabric. It features an adjustable hood, multiple pockets, and ventilation zippers to keep you cool during intense activities. Perfect for hiking, camping, and more! \ud83c\udf27\ufe0f\n\n2. **Summit Breeze Jacket** (Product ID: 3)  \n   A lightweight and windproof option, this jacket is made from water-resistant fabric and has a sleek design. It includes an adjustable hood and}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                                                }
+                                            ],
+                                            "max_tokens": 3000,
+                                            "temperature": 0.2
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-B2IY8rIhVK5Fgcozp7CJX8HKS8PgT",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "5",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "audio": null,
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    },
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "protected_material_code": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "protected_material_text": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1739887660,
+                                            "model": "gpt-4o-mini-2024-07-18",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_b045b4af17",
+                                            "usage": {
+                                                "completion_tokens": 1,
+                                                "prompt_tokens": 1152,
+                                                "total_tokens": 1153,
+                                                "completion_tokens_details": {
+                                                    "accepted_prediction_tokens": 0,
+                                                    "audio_tokens": 0,
+                                                    "reasoning_tokens": 0,
+                                                    "rejected_prediction_tokens": 0
+                                                },
+                                                "prompt_tokens_details": {
+                                                    "audio_tokens": 0,
+                                                    "cached_tokens": 0
+                                                }
+                                            },
+                                            "prompt_filter_results": [
+                                                {
+                                                    "prompt_index": 0,
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "jailbreak": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 1152,
+                                            "total_tokens": 1153
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-B2IY8rIhVK5Fgcozp7CJX8HKS8PgT",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "5",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "audio": "None",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            },
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "protected_material_code": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "protected_material_text": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "created": 1739887660,
+                                    "model": "gpt-4o-mini-2024-07-18",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_b045b4af17",
+                                    "usage": {
+                                        "completion_tokens": 1,
+                                        "prompt_tokens": 1152,
+                                        "total_tokens": 1153,
+                                        "completion_tokens_details": {
+                                            "accepted_prediction_tokens": 0,
+                                            "audio_tokens": 0,
+                                            "reasoning_tokens": 0,
+                                            "rejected_prediction_tokens": 0
+                                        },
+                                        "prompt_tokens_details": {
+                                            "audio_tokens": 0,
+                                            "cached_tokens": 0
+                                        }
+                                    },
+                                    "prompt_filter_results": [
+                                        {
+                                            "prompt_index": 0,
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "jailbreak": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "__usage": {
+                                    "completion_tokens": 2,
+                                    "prompt_tokens": 2304,
+                                    "total_tokens": 2306
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2025-02-18T14:07:40.556222",
+                                    "end": "2025-02-18T14:07:40.556529",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-B2IY8rIhVK5Fgcozp7CJX8HKS8PgT",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "5",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "audio": "None",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                },
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "protected_material_code": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "protected_material_text": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "created": 1739887660,
+                                        "model": "gpt-4o-mini-2024-07-18",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_b045b4af17",
+                                        "usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 1152,
+                                            "total_tokens": 1153,
+                                            "completion_tokens_details": {
+                                                "accepted_prediction_tokens": 0,
+                                                "audio_tokens": 0,
+                                                "reasoning_tokens": 0,
+                                                "rejected_prediction_tokens": 0
+                                            },
+                                            "prompt_tokens_details": {
+                                                "audio_tokens": 0,
+                                                "cached_tokens": 0
+                                            }
+                                        },
+                                        "prompt_filter_results": [
+                                            {
+                                                "prompt_index": 0,
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "jailbreak": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "result": "5"
+                            }
+                        ],
+                        "result": "5",
+                        "__usage": {
+                            "completion_tokens": 2,
+                            "prompt_tokens": 2304,
+                            "total_tokens": 2306
+                        }
+                    }
+                ],
+                "result": "5",
+                "__usage": {
+                    "completion_tokens": 2,
+                    "prompt_tokens": 2304,
+                    "total_tokens": 2306
+                }
+            }
+        ],
+        "result": "5",
+        "__usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 2304,
+            "total_tokens": 2306
+        }
+    }
+}

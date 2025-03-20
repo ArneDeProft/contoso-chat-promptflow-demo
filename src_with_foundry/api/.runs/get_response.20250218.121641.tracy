@@ -1,0 +1,625 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "get_response",
+        "__time": {
+            "start": "2025-02-18T12:16:35.812015",
+            "end": "2025-02-18T12:16:41.424594",
+            "duration": 5612
+        },
+        "signature": "contoso_chat.chat_request.get_response",
+        "inputs": {
+            "customerId": 1,
+            "question": "Do you have any climbing gear?",
+            "chat_history": []
+        },
+        "__frames": [
+            {
+                "name": "get_customer",
+                "__time": {
+                    "start": "2025-02-18T12:16:35.812160",
+                    "end": "2025-02-18T12:16:36.552232",
+                    "duration": 740
+                },
+                "signature": "contoso_chat.chat_request.get_customer",
+                "inputs": {
+                    "customerId": 1
+                },
+                "result": "None"
+            },
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2025-02-18T12:16:36.552316",
+                    "end": "2025-02-18T12:16:40.917749",
+                    "duration": 4365
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "product.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                        "api_version": "2024-08-01-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "context": "Do you have any climbing gear?"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2025-02-18T12:16:36.553004",
+                            "end": "2025-02-18T12:16:36.554579",
+                            "duration": 1
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/contoso_chat/product/product.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "Contoso Product Reasearch",
+                            "description": "A prompt that uses context to ground an incoming question",
+                            "authors": [
+                                "Seth Juarez"
+                            ],
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_deployment": "gpt-4o-mini",
+                                    "api_version": "2024-08-01-preview",
+                                    "azure_endpoint": "AZURE_OPENAI_ENDPOINT"
+                                },
+                                "parameters": {
+                                    "max_tokens": 1500
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "context": "Can you use a selection of sports and outdoor cooking gear as context?"
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/contoso_chat/product/product.prompty",
+                            "content": "system:\n\nYou are an AI assistant who helps people find information from a search index.\nYou can take context and create number of specialized queries to make to the\nsearch index return the most relevant information for a writer to use when\nwriting marketing articles.\n\n# Context\nUse the follow contex to provide a set of specialized queries to the search index:\n\n{{context}}\n\n# Response format\nThe response format is a JSON array that contains a list of specialized queries \nto make to the search index. Here is an example:\n\ncontext: Can you find a selection of outdoor apparel?\nqueries:\n[\n  \"outdoor apparel\",\n  \"outdoor clothing\",\n  \"outdoor gear\",\n  \"outdoor clothing brands\",\n  \"outdoor clothing stores\",\n]\n\nThis only an example of the output structure. You should make sure to use the context the user gives you\nto generate the queries.\n\n# Output format\nOnly output the full array of specialized queries to make to the search index. Limit\nyoursef to 5 queries.\n\nuser:\n{{context}}\n"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2025-02-18T12:16:36.554629",
+                            "end": "2025-02-18T12:16:36.556356",
+                            "duration": 1
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "Contoso Product Reasearch",
+                                "description": "A prompt that uses context to ground an incoming question",
+                                "authors": [
+                                    "Seth Juarez"
+                                ],
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "azure_endpoint": "AZURE_OPENAI_ENDPOINT"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 1500
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "context": "Can you use a selection of sports and outdoor cooking gear as context?"
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/contoso_chat/product/product.prompty",
+                                "content": "system:\n\nYou are an AI assistant who helps people find information from a search index.\nYou can take context and create number of specialized queries to make to the\nsearch index return the most relevant information for a writer to use when\nwriting marketing articles.\n\n# Context\nUse the follow contex to provide a set of specialized queries to the search index:\n\n{{context}}\n\n# Response format\nThe response format is a JSON array that contains a list of specialized queries \nto make to the search index. Here is an example:\n\ncontext: Can you find a selection of outdoor apparel?\nqueries:\n[\n  \"outdoor apparel\",\n  \"outdoor clothing\",\n  \"outdoor gear\",\n  \"outdoor clothing brands\",\n  \"outdoor clothing stores\",\n]\n\nThis only an example of the output structure. You should make sure to use the context the user gives you\nto generate the queries.\n\n# Output format\nOnly output the full array of specialized queries to make to the search index. Limit\nyoursef to 5 queries.\n\nuser:\n{{context}}\n"
+                            },
+                            "inputs": {
+                                "context": "Do you have any climbing gear?"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2025-02-18T12:16:36.554850",
+                                    "end": "2025-02-18T12:16:36.555586",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "context": "Do you have any climbing gear?"
+                                    }
+                                },
+                                "result": "system:\n\nYou are an AI assistant who helps people find information from a search index.\nYou can take context and create number of specialized queries to make to the\nsearch index return the most relevant information for a writer to use when\nwriting marketing articles.\n\n# Context\nUse the follow contex to provide a set of specialized queries to the search index:\n\nDo you have any climbing gear?\n\n# Response format\nThe response format is a JSON array that contains a list of specialized queries \nto make to the search index. Here is an example:\n\ncontext: Can you find a selection of outdoor apparel?\nqueries:\n[\n  \"outdoor apparel\",\n  \"outdoor clothing\",\n  \"outdoor gear\",\n  \"outdoor clothing brands\",\n  \"outdoor clothing stores\",\n]\n\nThis only an example of the output structure. You should make sure to use the context the user gives you\nto generate the queries.\n\n# Output format\nOnly output the full array of specialized queries to make to the search index. Limit\nyoursef to 5 queries.\n\nuser:\nDo you have any climbing gear?"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2025-02-18T12:16:36.555640",
+                                    "end": "2025-02-18T12:16:36.556285",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\n\nYou are an AI assistant who helps people find information from a search index.\nYou can take context and create number of specialized queries to make to the\nsearch index return the most relevant information for a writer to use when\nwriting marketing articles.\n\n# Context\nUse the follow contex to provide a set of specialized queries to the search index:\n\nDo you have any climbing gear?\n\n# Response format\nThe response format is a JSON array that contains a list of specialized queries \nto make to the search index. Here is an example:\n\ncontext: Can you find a selection of outdoor apparel?\nqueries:\n[\n  \"outdoor apparel\",\n  \"outdoor clothing\",\n  \"outdoor gear\",\n  \"outdoor clothing brands\",\n  \"outdoor clothing stores\",\n]\n\nThis only an example of the output structure. You should make sure to use the context the user gives you\nto generate the queries.\n\n# Output format\nOnly output the full array of specialized queries to make to the search index. Limit\nyoursef to 5 queries.\n\nuser:\nDo you have any climbing gear?"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant who helps people find information from a search index.\nYou can take context and create number of specialized queries to make to the\nsearch index return the most relevant information for a writer to use when\nwriting marketing articles.\n\n# Context\nUse the follow contex to provide a set of specialized queries to the search index:\n\nDo you have any climbing gear?\n\n# Response format\nThe response format is a JSON array that contains a list of specialized queries \nto make to the search index. Here is an example:\n\ncontext: Can you find a selection of outdoor apparel?\nqueries:\n[\n  \"outdoor apparel\",\n  \"outdoor clothing\",\n  \"outdoor gear\",\n  \"outdoor clothing brands\",\n  \"outdoor clothing stores\",\n]\n\nThis only an example of the output structure. You should make sure to use the context the user gives you\nto generate the queries.\n\n# Output format\nOnly output the full array of specialized queries to make to the search index. Limit\nyoursef to 5 queries."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "Do you have any climbing gear?"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant who helps people find information from a search index.\nYou can take context and create number of specialized queries to make to the\nsearch index return the most relevant information for a writer to use when\nwriting marketing articles.\n\n# Context\nUse the follow contex to provide a set of specialized queries to the search index:\n\nDo you have any climbing gear?\n\n# Response format\nThe response format is a JSON array that contains a list of specialized queries \nto make to the search index. Here is an example:\n\ncontext: Can you find a selection of outdoor apparel?\nqueries:\n[\n  \"outdoor apparel\",\n  \"outdoor clothing\",\n  \"outdoor gear\",\n  \"outdoor clothing brands\",\n  \"outdoor clothing stores\",\n]\n\nThis only an example of the output structure. You should make sure to use the context the user gives you\nto generate the queries.\n\n# Output format\nOnly output the full array of specialized queries to make to the search index. Limit\nyoursef to 5 queries."
+                            },
+                            {
+                                "role": "user",
+                                "content": "Do you have any climbing gear?"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2025-02-18T12:16:36.556388",
+                            "end": "2025-02-18T12:16:40.917710",
+                            "duration": 4361
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "Contoso Product Reasearch",
+                                "description": "A prompt that uses context to ground an incoming question",
+                                "authors": [
+                                    "Seth Juarez"
+                                ],
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "azure_endpoint": "AZURE_OPENAI_ENDPOINT"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 1500
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "context": "Can you use a selection of sports and outdoor cooking gear as context?"
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/contoso_chat/product/product.prompty",
+                                "content": "system:\n\nYou are an AI assistant who helps people find information from a search index.\nYou can take context and create number of specialized queries to make to the\nsearch index return the most relevant information for a writer to use when\nwriting marketing articles.\n\n# Context\nUse the follow contex to provide a set of specialized queries to the search index:\n\n{{context}}\n\n# Response format\nThe response format is a JSON array that contains a list of specialized queries \nto make to the search index. Here is an example:\n\ncontext: Can you find a selection of outdoor apparel?\nqueries:\n[\n  \"outdoor apparel\",\n  \"outdoor clothing\",\n  \"outdoor gear\",\n  \"outdoor clothing brands\",\n  \"outdoor clothing stores\",\n]\n\nThis only an example of the output structure. You should make sure to use the context the user gives you\nto generate the queries.\n\n# Output format\nOnly output the full array of specialized queries to make to the search index. Limit\nyoursef to 5 queries.\n\nuser:\n{{context}}\n"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant who helps people find information from a search index.\nYou can take context and create number of specialized queries to make to the\nsearch index return the most relevant information for a writer to use when\nwriting marketing articles.\n\n# Context\nUse the follow contex to provide a set of specialized queries to the search index:\n\nDo you have any climbing gear?\n\n# Response format\nThe response format is a JSON array that contains a list of specialized queries \nto make to the search index. Here is an example:\n\ncontext: Can you find a selection of outdoor apparel?\nqueries:\n[\n  \"outdoor apparel\",\n  \"outdoor clothing\",\n  \"outdoor gear\",\n  \"outdoor clothing brands\",\n  \"outdoor clothing stores\",\n]\n\nThis only an example of the output structure. You should make sure to use the context the user gives you\nto generate the queries.\n\n# Output format\nOnly output the full array of specialized queries to make to the search index. Limit\nyoursef to 5 queries."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "Do you have any climbing gear?"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                "api_version": "2024-08-01-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2025-02-18T12:16:36.556845",
+                                    "end": "2025-02-18T12:16:40.917285",
+                                    "duration": 4360
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant who helps people find information from a search index.\nYou can take context and create number of specialized queries to make to the\nsearch index return the most relevant information for a writer to use when\nwriting marketing articles.\n\n# Context\nUse the follow contex to provide a set of specialized queries to the search index:\n\nDo you have any climbing gear?\n\n# Response format\nThe response format is a JSON array that contains a list of specialized queries \nto make to the search index. Here is an example:\n\ncontext: Can you find a selection of outdoor apparel?\nqueries:\n[\n  \"outdoor apparel\",\n  \"outdoor clothing\",\n  \"outdoor gear\",\n  \"outdoor clothing brands\",\n  \"outdoor clothing stores\",\n]\n\nThis only an example of the output structure. You should make sure to use the context the user gives you\nto generate the queries.\n\n# Output format\nOnly output the full array of specialized queries to make to the search index. Limit\nyoursef to 5 queries."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "Do you have any climbing gear?"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2025-02-18T12:16:36.556942",
+                                            "end": "2025-02-18T12:16:36.562145",
+                                            "duration": 5
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                            "api_version": "2024-08-01-preview",
+                                            "azure_deployment": "gpt-4o-mini",
+                                            "azure_ad_token_provider": "***********************************************************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x7ef5e1f19210>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2025-02-18T12:16:36.562185",
+                                            "end": "2025-02-18T12:16:40.916991",
+                                            "duration": 4354
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4o-mini",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant who helps people find information from a search index.\nYou can take context and create number of specialized queries to make to the\nsearch index return the most relevant information for a writer to use when\nwriting marketing articles.\n\n# Context\nUse the follow contex to provide a set of specialized queries to the search index:\n\nDo you have any climbing gear?\n\n# Response format\nThe response format is a JSON array that contains a list of specialized queries \nto make to the search index. Here is an example:\n\ncontext: Can you find a selection of outdoor apparel?\nqueries:\n[\n  \"outdoor apparel\",\n  \"outdoor clothing\",\n  \"outdoor gear\",\n  \"outdoor clothing brands\",\n  \"outdoor clothing stores\",\n]\n\nThis only an example of the output structure. You should make sure to use the context the user gives you\nto generate the queries.\n\n# Output format\nOnly output the full array of specialized queries to make to the search index. Limit\nyoursef to 5 queries."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "Do you have any climbing gear?"
+                                                }
+                                            ],
+                                            "max_tokens": 1500
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-B2Goio000uiMfEiXGAaUR27ylyA7o",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "[\n  \"climbing gear\",\n  \"rock climbing equipment\",\n  \"mountaineering gear\",\n  \"outdoor climbing supplies\",\n  \"best climbing gear brands\"\n]",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "audio": null,
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    },
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1739881000,
+                                            "model": "gpt-4o-mini-2024-07-18",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_b045b4af17",
+                                            "usage": {
+                                                "completion_tokens": 35,
+                                                "prompt_tokens": 227,
+                                                "total_tokens": 262,
+                                                "completion_tokens_details": {
+                                                    "accepted_prediction_tokens": 0,
+                                                    "audio_tokens": 0,
+                                                    "reasoning_tokens": 0,
+                                                    "rejected_prediction_tokens": 0
+                                                },
+                                                "prompt_tokens_details": {
+                                                    "audio_tokens": 0,
+                                                    "cached_tokens": 0
+                                                }
+                                            },
+                                            "prompt_filter_results": [
+                                                {
+                                                    "prompt_index": 0,
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "jailbreak": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 35,
+                                            "prompt_tokens": 227,
+                                            "total_tokens": 262
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-B2Goio000uiMfEiXGAaUR27ylyA7o",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "[\n  \"climbing gear\",\n  \"rock climbing equipment\",\n  \"mountaineering gear\",\n  \"outdoor climbing supplies\",\n  \"best climbing gear brands\"\n]",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "audio": "None",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            },
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "created": 1739881000,
+                                    "model": "gpt-4o-mini-2024-07-18",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_b045b4af17",
+                                    "usage": {
+                                        "completion_tokens": 35,
+                                        "prompt_tokens": 227,
+                                        "total_tokens": 262,
+                                        "completion_tokens_details": {
+                                            "accepted_prediction_tokens": 0,
+                                            "audio_tokens": 0,
+                                            "reasoning_tokens": 0,
+                                            "rejected_prediction_tokens": 0
+                                        },
+                                        "prompt_tokens_details": {
+                                            "audio_tokens": 0,
+                                            "cached_tokens": 0
+                                        }
+                                    },
+                                    "prompt_filter_results": [
+                                        {
+                                            "prompt_index": 0,
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "jailbreak": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "__usage": {
+                                    "completion_tokens": 70,
+                                    "prompt_tokens": 454,
+                                    "total_tokens": 524
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2025-02-18T12:16:40.917342",
+                                    "end": "2025-02-18T12:16:40.917671",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-B2Goio000uiMfEiXGAaUR27ylyA7o",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "[\n  \"climbing gear\",\n  \"rock climbing equipment\",\n  \"mountaineering gear\",\n  \"outdoor climbing supplies\",\n  \"best climbing gear brands\"\n]",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "audio": "None",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                },
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "created": 1739881000,
+                                        "model": "gpt-4o-mini-2024-07-18",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_b045b4af17",
+                                        "usage": {
+                                            "completion_tokens": 35,
+                                            "prompt_tokens": 227,
+                                            "total_tokens": 262,
+                                            "completion_tokens_details": {
+                                                "accepted_prediction_tokens": 0,
+                                                "audio_tokens": 0,
+                                                "reasoning_tokens": 0,
+                                                "rejected_prediction_tokens": 0
+                                            },
+                                            "prompt_tokens_details": {
+                                                "audio_tokens": 0,
+                                                "cached_tokens": 0
+                                            }
+                                        },
+                                        "prompt_filter_results": [
+                                            {
+                                                "prompt_index": 0,
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "jailbreak": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "result": "[\n  \"climbing gear\",\n  \"rock climbing equipment\",\n  \"mountaineering gear\",\n  \"outdoor climbing supplies\",\n  \"best climbing gear brands\"\n]"
+                            }
+                        ],
+                        "result": "[\n  \"climbing gear\",\n  \"rock climbing equipment\",\n  \"mountaineering gear\",\n  \"outdoor climbing supplies\",\n  \"best climbing gear brands\"\n]",
+                        "__usage": {
+                            "completion_tokens": 70,
+                            "prompt_tokens": 454,
+                            "total_tokens": 524
+                        }
+                    }
+                ],
+                "result": "[\n  \"climbing gear\",\n  \"rock climbing equipment\",\n  \"mountaineering gear\",\n  \"outdoor climbing supplies\",\n  \"best climbing gear brands\"\n]",
+                "__usage": {
+                    "completion_tokens": 70,
+                    "prompt_tokens": 454,
+                    "total_tokens": 524
+                }
+            },
+            {
+                "name": "generate_embeddings",
+                "__time": {
+                    "start": "2025-02-18T12:16:40.917792",
+                    "end": "2025-02-18T12:16:41.424446",
+                    "duration": 506
+                },
+                "signature": "contoso_chat.product.product.generate_embeddings",
+                "inputs": {
+                    "queries": [
+                        "climbing gear",
+                        "rock climbing equipment",
+                        "mountaineering gear",
+                        "outdoor climbing supplies",
+                        "best climbing gear brands"
+                    ]
+                }
+            }
+        ],
+        "__usage": {
+            "completion_tokens": 70,
+            "prompt_tokens": 454,
+            "total_tokens": 524
+        }
+    }
+}

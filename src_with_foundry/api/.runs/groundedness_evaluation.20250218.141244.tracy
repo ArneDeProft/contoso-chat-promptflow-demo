@@ -1,0 +1,732 @@
+{
+    "runtime": "python",
+    "version": "0.1.24",
+    "trace": {
+        "name": "groundedness_evaluation",
+        "__time": {
+            "start": "2025-02-18T14:12:26.764670",
+            "end": "2025-02-18T14:12:44.048108",
+            "duration": 17283
+        },
+        "signature": "evaluators.custom_evals.groundedness.groundedness_evaluation",
+        "inputs": {
+            "question": "what is the temperature rating of my sleeping bag?",
+            "context": [
+                {
+                    "id": "7",
+                    "title": "CozyNights Sleeping Bag",
+                    "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                    "url": "/products/cozynights-sleeping-bag"
+                },
+                {
+                    "id": "14",
+                    "title": "MountainDream Sleeping Bag",
+                    "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                    "url": "/products/mountaindream-sleeping-bag"
+                }
+            ],
+            "answer": "Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728"
+        },
+        "__frames": [
+            {
+                "name": "execute",
+                "__time": {
+                    "start": "2025-02-18T14:12:26.764845",
+                    "end": "2025-02-18T14:12:44.048070",
+                    "duration": 17283
+                },
+                "signature": "prompty.execute",
+                "description": "Execute a prompty",
+                "inputs": {
+                    "prompt": "groundedness.prompty",
+                    "configuration": {
+                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                        "api_version": "2024-08-01-preview"
+                    },
+                    "parameters": {},
+                    "inputs": {
+                        "question": "what is the temperature rating of my sleeping bag?",
+                        "context": [
+                            {
+                                "id": "7",
+                                "title": "CozyNights Sleeping Bag",
+                                "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                                "url": "/products/cozynights-sleeping-bag"
+                            },
+                            {
+                                "id": "14",
+                                "title": "MountainDream Sleeping Bag",
+                                "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                                "url": "/products/mountaindream-sleeping-bag"
+                            }
+                        ],
+                        "answer": "Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728"
+                    },
+                    "raw": false,
+                    "config_name": "default"
+                },
+                "__frames": [
+                    {
+                        "name": "load",
+                        "__time": {
+                            "start": "2025-02-18T14:12:26.765286",
+                            "end": "2025-02-18T14:12:26.767971",
+                            "duration": 2
+                        },
+                        "signature": "prompty.load",
+                        "description": "Load a prompty file.",
+                        "inputs": {
+                            "prompty_file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/groundedness.prompty",
+                            "configuration": "default"
+                        },
+                        "result": {
+                            "name": "QnA Groundedness Evaluation",
+                            "description": "Compute the groundedness of the answer for the given question based on the context.",
+                            "model": {
+                                "api": "chat",
+                                "configuration": {
+                                    "type": "azure_openai",
+                                    "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                    "azure_deployment": "gpt-4o-mini",
+                                    "api_version": "2024-08-01-preview",
+                                    "api_key": "********************************"
+                                },
+                                "parameters": {
+                                    "max_tokens": 3000,
+                                    "temperature": 0.2
+                                },
+                                "response": {}
+                            },
+                            "sample": {
+                                "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                            },
+                            "inputs": {
+                                "question": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "context": {
+                                    "type": "object",
+                                    "default": "None",
+                                    "description": ""
+                                },
+                                "answer": {
+                                    "type": "string",
+                                    "default": "None",
+                                    "description": ""
+                                }
+                            },
+                            "template": {
+                                "type": "jinja2",
+                                "parser": "prompty"
+                            },
+                            "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/groundedness.prompty",
+                            "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": {{context}}, \"QUESTION\": \"\", \"ANSWER\": {{answer}}}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                        }
+                    },
+                    {
+                        "name": "prepare",
+                        "__time": {
+                            "start": "2025-02-18T14:12:26.768024",
+                            "end": "2025-02-18T14:12:26.769605",
+                            "duration": 1
+                        },
+                        "signature": "prompty.prepare",
+                        "description": "Prepare the inputs for the prompt.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Groundedness Evaluation",
+                                "description": "Compute the groundedness of the answer for the given question based on the context.",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "api_key": "********************************"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 3000,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/groundedness.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": {{context}}, \"QUESTION\": \"\", \"ANSWER\": {{answer}}}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                            },
+                            "inputs": {
+                                "question": "what is the temperature rating of my sleeping bag?",
+                                "context": [
+                                    {
+                                        "id": "7",
+                                        "title": "CozyNights Sleeping Bag",
+                                        "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                                        "url": "/products/cozynights-sleeping-bag"
+                                    },
+                                    {
+                                        "id": "14",
+                                        "title": "MountainDream Sleeping Bag",
+                                        "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                                        "url": "/products/mountaindream-sleeping-bag"
+                                    }
+                                ],
+                                "answer": "Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728"
+                            }
+                        },
+                        "__frames": [
+                            {
+                                "name": "Jinja2Renderer",
+                                "__time": {
+                                    "start": "2025-02-18T14:12:26.768348",
+                                    "end": "2025-02-18T14:12:26.769245",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.renderers.Jinja2Renderer.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "question": "what is the temperature rating of my sleeping bag?",
+                                        "context": [
+                                            {
+                                                "id": "7",
+                                                "title": "CozyNights Sleeping Bag",
+                                                "content": "Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.",
+                                                "url": "/products/cozynights-sleeping-bag"
+                                            },
+                                            {
+                                                "id": "14",
+                                                "title": "MountainDream Sleeping Bag",
+                                                "content": "Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.",
+                                                "url": "/products/mountaindream-sleeping-bag"
+                                            }
+                                        ],
+                                        "answer": "Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728"
+                                    }
+                                },
+                                "result": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '7', 'title': 'CozyNights Sleeping Bag', 'content': \"Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.\", 'url': '/products/cozynights-sleeping-bag'}, {'id': '14', 'title': 'MountainDream Sleeping Bag', 'content': \"Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.\", 'url': '/products/mountaindream-sleeping-bag'}], \"QUESTION\": \"\", \"ANSWER\": Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                            },
+                            {
+                                "name": "PromptyChatParser",
+                                "__time": {
+                                    "start": "2025-02-18T14:12:26.769296",
+                                    "end": "2025-02-18T14:12:26.769532",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.parsers.PromptyChatParser.invoke",
+                                "inputs": {
+                                    "data": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '7', 'title': 'CozyNights Sleeping Bag', 'content': \"Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.\", 'url': '/products/cozynights-sleeping-bag'}, {'id': '14', 'title': 'MountainDream Sleeping Bag', 'content': \"Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.\", 'url': '/products/mountaindream-sleeping-bag'}], \"QUESTION\": \"\", \"ANSWER\": Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                                },
+                                "result": [
+                                    {
+                                        "role": "system",
+                                        "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                    },
+                                    {
+                                        "role": "user",
+                                        "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '7', 'title': 'CozyNights Sleeping Bag', 'content': \"Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.\", 'url': '/products/cozynights-sleeping-bag'}, {'id': '14', 'title': 'MountainDream Sleeping Bag', 'content': \"Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.\", 'url': '/products/mountaindream-sleeping-bag'}], \"QUESTION\": \"\", \"ANSWER\": Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                                    }
+                                ]
+                            }
+                        ],
+                        "result": [
+                            {
+                                "role": "system",
+                                "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                            },
+                            {
+                                "role": "user",
+                                "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '7', 'title': 'CozyNights Sleeping Bag', 'content': \"Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.\", 'url': '/products/cozynights-sleeping-bag'}, {'id': '14', 'title': 'MountainDream Sleeping Bag', 'content': \"Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.\", 'url': '/products/mountaindream-sleeping-bag'}], \"QUESTION\": \"\", \"ANSWER\": Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "run",
+                        "__time": {
+                            "start": "2025-02-18T14:12:26.769634",
+                            "end": "2025-02-18T14:12:44.048021",
+                            "duration": 17278
+                        },
+                        "signature": "prompty.run",
+                        "description": "Run the prepared Prompty content against the model.",
+                        "inputs": {
+                            "prompt": {
+                                "name": "QnA Groundedness Evaluation",
+                                "description": "Compute the groundedness of the answer for the given question based on the context.",
+                                "model": {
+                                    "api": "chat",
+                                    "configuration": {
+                                        "type": "azure_openai",
+                                        "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                        "azure_deployment": "gpt-4o-mini",
+                                        "api_version": "2024-08-01-preview",
+                                        "api_key": "********************************"
+                                    },
+                                    "parameters": {
+                                        "max_tokens": 3000,
+                                        "temperature": 0.2
+                                    },
+                                    "response": {}
+                                },
+                                "sample": {
+                                    "question": "What feeds all the fixtures in low voltage tracks instead of each light having a line-to-low voltage transformer?",
+                                    "context": "Track lighting, invented by Lightolier, was popular at one period of time because it was much easier to install than recessed lighting, and individual fixtures are decorative and can be easily aimed at a wall. It has regained some popularity recently in low-voltage tracks, which often look nothing like their predecessors because they do not have the safety issues that line-voltage systems have, and are therefore less bulky and more ornamental in themselves. A master transformer feeds all of the fixtures on the track or rod with 12 or 24 volts, instead of each light fixture having its own line-to-low voltage transformer. There are traditional spots and floods, as well as other small hanging fixtures. A modified version of this is cable lighting, where lights are hung from or clipped to bare metal cables under tension",
+                                    "answer": "The main transformer is the object that feeds all the fixtures in low voltage tracks."
+                                },
+                                "inputs": {
+                                    "question": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "context": {
+                                        "type": "object",
+                                        "default": "None",
+                                        "description": ""
+                                    },
+                                    "answer": {
+                                        "type": "string",
+                                        "default": "None",
+                                        "description": ""
+                                    }
+                                },
+                                "template": {
+                                    "type": "jinja2",
+                                    "parser": "prompty"
+                                },
+                                "file": "/workspaces/contoso-chat/src/api/evaluators/custom_evals/groundedness.prompty",
+                                "content": "system:\nYou are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information.\nuser:\nYou will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": {{context}}, \"QUESTION\": \"\", \"ANSWER\": {{answer}}}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                            },
+                            "content": [
+                                {
+                                    "role": "system",
+                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                },
+                                {
+                                    "role": "user",
+                                    "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '7', 'title': 'CozyNights Sleeping Bag', 'content': \"Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.\", 'url': '/products/cozynights-sleeping-bag'}, {'id': '14', 'title': 'MountainDream Sleeping Bag', 'content': \"Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.\", 'url': '/products/mountaindream-sleeping-bag'}], \"QUESTION\": \"\", \"ANSWER\": Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                                }
+                            ],
+                            "configuration": {
+                                "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                "api_version": "2024-08-01-preview"
+                            },
+                            "parameters": {},
+                            "raw": false
+                        },
+                        "__frames": [
+                            {
+                                "name": "AzureOpenAIExecutor",
+                                "__time": {
+                                    "start": "2025-02-18T14:12:26.769977",
+                                    "end": "2025-02-18T14:12:44.047519",
+                                    "duration": 17277
+                                },
+                                "signature": "prompty.azure.executor.AzureOpenAIExecutor.invoke",
+                                "inputs": {
+                                    "data": [
+                                        {
+                                            "role": "system",
+                                            "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                        },
+                                        {
+                                            "role": "user",
+                                            "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '7', 'title': 'CozyNights Sleeping Bag', 'content': \"Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.\", 'url': '/products/cozynights-sleeping-bag'}, {'id': '14', 'title': 'MountainDream Sleeping Bag', 'content': \"Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.\", 'url': '/products/mountaindream-sleeping-bag'}], \"QUESTION\": \"\", \"ANSWER\": Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                                        }
+                                    ]
+                                },
+                                "__frames": [
+                                    {
+                                        "name": "AzureOpenAI",
+                                        "__time": {
+                                            "start": "2025-02-18T14:12:26.770081",
+                                            "end": "2025-02-18T14:12:26.782203",
+                                            "duration": 12
+                                        },
+                                        "type": "LLM",
+                                        "signature": "AzureOpenAI.ctor",
+                                        "description": "Azure OpenAI Constructor",
+                                        "inputs": {
+                                            "azure_endpoint": "https://aoai-ab3q7agmgxvae.openai.azure.com/",
+                                            "api_version": "2024-08-01-preview",
+                                            "azure_deployment": "gpt-4o-mini",
+                                            "api_key": "********************************"
+                                        },
+                                        "result": "<openai.lib.azure.AzureOpenAI object at 0x702ae85909d0>"
+                                    },
+                                    {
+                                        "name": "create",
+                                        "__time": {
+                                            "start": "2025-02-18T14:12:26.782311",
+                                            "end": "2025-02-18T14:12:44.047159",
+                                            "duration": 17264
+                                        },
+                                        "type": "LLM",
+                                        "description": "Azure OpenAI Client",
+                                        "signature": "AzureOpenAI.chat.completions.create",
+                                        "inputs": {
+                                            "model": "gpt-4o-mini",
+                                            "messages": [
+                                                {
+                                                    "role": "system",
+                                                    "content": "You are an AI assistant. You will be given the definition of an evaluation metric for assessing the quality of an answer in a question-answering task. Your job is to compute an accurate evaluation score using the provided evaluation metric. You should return a single integer value between 1 to 5 representing the evaluation metric. You will include no other text or information."
+                                                },
+                                                {
+                                                    "role": "user",
+                                                    "content": "You will be presented with a CONTEXT and an ANSWER about that CONTEXT. You need to decide whether the ANSWER is entailed by the CONTEXT by choosing one of the following rating:\n1. 5: The ANSWER follows logically from the information contained in the CONTEXT.\n2. 1: The ANSWER is logically false from the information contained in the CONTEXT.\n3. an integer score between 1 and 5 and if such integer score does not exist, use 1: It is not possible to determine whether the ANSWER is true or false without further information. Read the passage of information thoroughly and select the correct answer from the three answer labels. Read the CONTEXT thoroughly to ensure you know what the CONTEXT entails. Note the ANSWER is generated by a computer system, it can contain certain symbols, which should not be a negative factor in the evaluation.\nIndependent Examples:\n## Example Task #1 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #1 Output:\n1\n## Example Task #2 Input:\n{\"CONTEXT\": \"Ten new television shows appeared during the month of September. Five of the shows were sitcoms, three were hourlong dramas, and two were news-magazine shows. By January, only seven of these new shows were still on the air. Five of the shows that remained were sitcoms.\", \"QUESTION\": \"\", \"ANSWER\": \"At least one of the shows that were cancelled was an hourlong drama.\"}\n## Example Task #2 Output:\n5\n## Example Task #3 Input:\n{\"CONTEXT\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is neither French nor English.\", \"QUESTION\": \"\", \"ANSWER\": \"In Quebec, an allophone is a resident, usually an immigrant, whose mother tongue or home language is not French.\"}\n## Example Task #3 Output:\n5\n## Example Task #4 Input:\n{\"CONTEXT\": \"Some are reported as not having been wanted at all.\", \"QUESTION\": \"\", \"ANSWER\": \"All are reported as being completely and fully wanted.\"}\n## Example Task #4 Output:\n1\n## Actual Task Input:\n{\"CONTEXT\": [{'id': '7', 'title': 'CozyNights Sleeping Bag', 'content': \"Embrace the great outdoors in any season with the lightweight CozyNights Sleeping Bag! This durable three-season bag is superbly designed to give hikers, campers, and backpackers comfort and warmth during spring, summer, and fall. With a compact design that folds down into a convenient stuff sack, you can whisk it away on any adventure without a hitch. The sleeping bag takes comfort seriously, featuring a handy hood, ample room and padding, and a reliable temperature rating. Crafted from high-quality polyester, it ensures long-lasting use and can even be zipped together with another bag for shared comfort. Whether you're gazing at stars or catching a quick nap between trails, the CozyNights Sleeping Bag makes it a treat. Don't just sleep\u2014 dream with CozyNights.\", 'url': '/products/cozynights-sleeping-bag'}, {'id': '14', 'title': 'MountainDream Sleeping Bag', 'content': \"Meet the MountainDream Sleeping Bag: your new must-have companion for every outdoor adventure. Designed to handle 3-season camping with ease, it comes equipped with a premium synthetic insulation that will keep you cozy even when temperatures fall down to 15\u00b0F! Sporting a durable water-resistant nylon shell and soft breathable polyester lining, this bag doesn't sacrifice comfort for toughness. The star of the show is the contoured mummy shape that not only provides optimal heat retention but also cuts down on the weight. A smooth, snag-free YKK zipper with a unique anti-snag design allows for hassle-free operation, while the adjustable hood and full-length zipper baffle work together to ensure you stay warm all night long. Need to bring along some essentials? Not to worry! There's an interior pocket just for that. And when it's time to pack up? Just slip it into the included compression sack for easy storage and transport. Whether you're a backpacking pro or a camping novice, the MountainDream Sleeping Bag is the perfect blend of durability, warmth, and comfort that you've been looking for.\", 'url': '/products/mountaindream-sleeping-bag'}], \"QUESTION\": \"\", \"ANSWER\": Hi Jason! \ud83d\ude0a \n\nThe **CozyNights Sleeping Bag** doesn't specify an exact temperature rating in the description, but it's designed for three-season use, which typically means it can handle spring, summer, and fall temperatures comfortably. \n\nIf you're looking for something that can handle colder temperatures, you might want to consider the **MountainDream Sleeping Bag**, which is rated for temperatures down to 15\u00b0F! \ud83e\udd76\n\nBoth sleeping bags would pair nicely with your **TrailBlaze Hiking Pants** for a cozy outdoor experience! Happy adventuring! \ud83c\udf32\u2728}\nReminder: The return values for each task should be correctly formatted as an integer between 1 and 5. Do not repeat the context and question.\nActual Task Output:"
+                                                }
+                                            ],
+                                            "max_tokens": 3000,
+                                            "temperature": 0.2
+                                        },
+                                        "result": {
+                                            "id": "chatcmpl-B2Id1UGNXwEj6JuHsGD4zC307O3gn",
+                                            "choices": [
+                                                {
+                                                    "finish_reason": "stop",
+                                                    "index": 0,
+                                                    "logprobs": null,
+                                                    "message": {
+                                                        "content": "5",
+                                                        "refusal": null,
+                                                        "role": "assistant",
+                                                        "audio": null,
+                                                        "function_call": null,
+                                                        "tool_calls": null
+                                                    },
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "protected_material_code": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "protected_material_text": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "created": 1739887963,
+                                            "model": "gpt-4o-mini-2024-07-18",
+                                            "object": "chat.completion",
+                                            "service_tier": null,
+                                            "system_fingerprint": "fp_b045b4af17",
+                                            "usage": {
+                                                "completion_tokens": 1,
+                                                "prompt_tokens": 1154,
+                                                "total_tokens": 1155,
+                                                "completion_tokens_details": {
+                                                    "accepted_prediction_tokens": 0,
+                                                    "audio_tokens": 0,
+                                                    "reasoning_tokens": 0,
+                                                    "rejected_prediction_tokens": 0
+                                                },
+                                                "prompt_tokens_details": {
+                                                    "audio_tokens": 0,
+                                                    "cached_tokens": 0
+                                                }
+                                            },
+                                            "prompt_filter_results": [
+                                                {
+                                                    "prompt_index": 0,
+                                                    "content_filter_results": {
+                                                        "hate": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "jailbreak": {
+                                                            "filtered": false,
+                                                            "detected": false
+                                                        },
+                                                        "self_harm": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "sexual": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        },
+                                                        "violence": {
+                                                            "filtered": false,
+                                                            "severity": "safe"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "__usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 1154,
+                                            "total_tokens": 1155
+                                        }
+                                    }
+                                ],
+                                "result": {
+                                    "id": "chatcmpl-B2Id1UGNXwEj6JuHsGD4zC307O3gn",
+                                    "choices": [
+                                        {
+                                            "finish_reason": "stop",
+                                            "index": 0,
+                                            "logprobs": "None",
+                                            "message": {
+                                                "content": "5",
+                                                "refusal": "None",
+                                                "role": "assistant",
+                                                "audio": "None",
+                                                "function_call": "None",
+                                                "tool_calls": "None"
+                                            },
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "protected_material_code": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "protected_material_text": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ],
+                                    "created": 1739887963,
+                                    "model": "gpt-4o-mini-2024-07-18",
+                                    "object": "chat.completion",
+                                    "service_tier": "None",
+                                    "system_fingerprint": "fp_b045b4af17",
+                                    "usage": {
+                                        "completion_tokens": 1,
+                                        "prompt_tokens": 1154,
+                                        "total_tokens": 1155,
+                                        "completion_tokens_details": {
+                                            "accepted_prediction_tokens": 0,
+                                            "audio_tokens": 0,
+                                            "reasoning_tokens": 0,
+                                            "rejected_prediction_tokens": 0
+                                        },
+                                        "prompt_tokens_details": {
+                                            "audio_tokens": 0,
+                                            "cached_tokens": 0
+                                        }
+                                    },
+                                    "prompt_filter_results": [
+                                        {
+                                            "prompt_index": 0,
+                                            "content_filter_results": {
+                                                "hate": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "jailbreak": {
+                                                    "filtered": false,
+                                                    "detected": false
+                                                },
+                                                "self_harm": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "sexual": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                },
+                                                "violence": {
+                                                    "filtered": false,
+                                                    "severity": "safe"
+                                                }
+                                            }
+                                        }
+                                    ]
+                                },
+                                "__usage": {
+                                    "completion_tokens": 2,
+                                    "prompt_tokens": 2308,
+                                    "total_tokens": 2310
+                                }
+                            },
+                            {
+                                "name": "AzureOpenAIProcessor",
+                                "__time": {
+                                    "start": "2025-02-18T14:12:44.047581",
+                                    "end": "2025-02-18T14:12:44.047977",
+                                    "duration": 0
+                                },
+                                "signature": "prompty.azure.processor.AzureOpenAIProcessor.invoke",
+                                "inputs": {
+                                    "data": {
+                                        "id": "chatcmpl-B2Id1UGNXwEj6JuHsGD4zC307O3gn",
+                                        "choices": [
+                                            {
+                                                "finish_reason": "stop",
+                                                "index": 0,
+                                                "logprobs": "None",
+                                                "message": {
+                                                    "content": "5",
+                                                    "refusal": "None",
+                                                    "role": "assistant",
+                                                    "audio": "None",
+                                                    "function_call": "None",
+                                                    "tool_calls": "None"
+                                                },
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "protected_material_code": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "protected_material_text": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "created": 1739887963,
+                                        "model": "gpt-4o-mini-2024-07-18",
+                                        "object": "chat.completion",
+                                        "service_tier": "None",
+                                        "system_fingerprint": "fp_b045b4af17",
+                                        "usage": {
+                                            "completion_tokens": 1,
+                                            "prompt_tokens": 1154,
+                                            "total_tokens": 1155,
+                                            "completion_tokens_details": {
+                                                "accepted_prediction_tokens": 0,
+                                                "audio_tokens": 0,
+                                                "reasoning_tokens": 0,
+                                                "rejected_prediction_tokens": 0
+                                            },
+                                            "prompt_tokens_details": {
+                                                "audio_tokens": 0,
+                                                "cached_tokens": 0
+                                            }
+                                        },
+                                        "prompt_filter_results": [
+                                            {
+                                                "prompt_index": 0,
+                                                "content_filter_results": {
+                                                    "hate": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "jailbreak": {
+                                                        "filtered": false,
+                                                        "detected": false
+                                                    },
+                                                    "self_harm": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "sexual": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    },
+                                                    "violence": {
+                                                        "filtered": false,
+                                                        "severity": "safe"
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "result": "5"
+                            }
+                        ],
+                        "result": "5",
+                        "__usage": {
+                            "completion_tokens": 2,
+                            "prompt_tokens": 2308,
+                            "total_tokens": 2310
+                        }
+                    }
+                ],
+                "result": "5",
+                "__usage": {
+                    "completion_tokens": 2,
+                    "prompt_tokens": 2308,
+                    "total_tokens": 2310
+                }
+            }
+        ],
+        "result": "5",
+        "__usage": {
+            "completion_tokens": 2,
+            "prompt_tokens": 2308,
+            "total_tokens": 2310
+        }
+    }
+}
